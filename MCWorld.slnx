@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MCWorld/MCWorld.vcxproj" Id="eeed37f5-07b7-4961-9524-44090e4233d1" />
+</Solution>
