@@ -13,8 +13,8 @@ void World::MainLoop(unsigned __int64 times)
 void World::GameInit()
 {
 	for (const auto& go : _gameobjs) {
-		for (const auto& behavior : go.second->_behaviors) {
-			behavior.second->Start();
+		for (const auto& cmp : go.second->_components) {
+			cmp.second->Start();
 		}
 	}
 }
@@ -50,8 +50,8 @@ void World::SetLoopDeltaTime(float val)
 void World::UpdateWorld()
 {
 	for (const auto& go : _gameobjs) {
-		for (const auto& behavior : go.second->_behaviors) {
-			behavior.second->Update();
+		for (const auto& cmp : go.second->_components) {
+			cmp.second->Update();
 		}
 	}
 }

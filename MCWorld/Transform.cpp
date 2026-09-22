@@ -1,5 +1,5 @@
 #include "Transform.hpp"
-
+#include <print>
 Vector3 Transform::GetPosition()
 {
     return _position;
@@ -16,4 +16,5 @@ Transform::Transform(GameObj* owner)
     this->_position = Vector3();
     this->_gameobj = owner;
 }
+
 
